@@ -185,6 +185,7 @@ body {
   .main-skill {
     grid-template-columns: repeat(6, 1fr);
     gap: 48px;
+    padding-top: 0;
 
     .main-content {
       width: 120px;
@@ -205,12 +206,14 @@ body {
 
   .main-about {
     grid-template-columns: repeat(2, auto);
+    padding-top: 0;
 
     .main-content {
       width: 300px;
       height: 400px;
       font-size: 24px;
       padding: 28px;
+      cursor: default;
     }
 
     .about-one {
@@ -228,12 +231,56 @@ body {
 
   .main-contact {
     grid-template-columns: repeat(1, auto);
+    padding-top: 0;
 
     .main-content {
       width: 300px;
-      height: 400px;
+      height: auto;
       font-size: 24px;
       padding: 28px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      cursor: default;
+
+      .name {
+        margin-bottom: 0;
+      }
+
+      .id {
+        margin-top: 0;
+        font-size: .7em;
+        color: #aaaaaa;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 0;
+
+        li {
+          list-style: none;
+          padding: 0 16px;
+
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+
+          a {
+            font-size: .6em;
+            color: black;
+            text-decoration: none;
+          }
+
+          a:hover {
+            color: red;
+          }
+        }
+      }
     }
   }
 
@@ -291,6 +338,27 @@ body {
 
     .main-contact {
       grid-template-columns: repeat(1, 1fr);
+
+      .main-content {
+
+        .name {
+          font-size: .4em;
+        }
+
+        .id {
+          font-size: .25em;
+        }
+
+        ul {
+
+          li {
+
+            a {
+              font-size: .2em;
+            }
+          }
+        }
+      }
     }
   }
 }
