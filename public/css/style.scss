@@ -158,10 +158,17 @@ body {
       border: 0px solid var(--blue);
       border-radius: 50px;
       color: var(--bgLight);
-      font-size: 128px;
+      font-size: 42px;
       transition: linear 0.2s;
       cursor: pointer;
       filter: drop-shadow(0 10px 5px rgba(0,0,0,.15));
+
+      img {
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+        filter: drop-shadow(0 5px 3px rgba(0,0,0,.15));
+      }
     }
 
     .main-content:hover {
@@ -180,9 +187,19 @@ body {
     gap: 48px;
 
     .main-content {
-      width: 150px;
-      height: 200px;
-      font-size: 24px;
+      width: 120px;
+      height: 180px;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      img {
+        width: 80px;
+        height: 80px;
+        margin-top: 24px;
+        border-radius: 10px;
+      }
     }
   }
 
@@ -203,7 +220,20 @@ body {
     }
 
     .about-two {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+  }
+
+  .main-contact {
+    grid-template-columns: repeat(1, auto);
+
+    .main-content {
       width: 300px;
+      height: 400px;
+      font-size: 24px;
+      padding: 28px;
     }
   }
 
@@ -258,6 +288,10 @@ body {
         font-size: 18px;
       }
     }
+
+    .main-contact {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
@@ -268,6 +302,10 @@ body {
     }
 
     .main-about {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-contact {
       grid-template-columns: repeat(1, 1fr);
     }
   }
