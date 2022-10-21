@@ -309,7 +309,7 @@ body {
         justify-content: space-between;
 
         i {
-          padding-left: 3px;
+          padding-left: 5px;
         }
 
         input {
@@ -319,6 +319,8 @@ body {
           font-weight: 500;
           text-transform: uppercase;
           padding-left: 32px;
+
+          border-radius: 0 50px 50px 0;
         }
 
         input::placeholder {
@@ -654,6 +656,48 @@ body {
     .main-weather {
       .main-container {
         width: 350px;
+
+        .container {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: 0;
+
+          .weather-box {
+            width: 60%;
+
+            img {
+              width: 60%;
+            }
+          }
+
+          .weather-details {
+            flex-direction: row;
+            justify-content: space-around;
+
+            .humidity,
+            .wind {
+              display: flex;
+              align-items: center;
+              width: 50%;
+              height: 50px;
+              margin: 20px;
+            }
+
+            i {
+              font-size: 36px;
+            }
+
+            span {
+              font-size: 18px;
+            }
+
+            p {
+              font-size: 16px;
+              margin: 0;
+            }
+          }
+        }
       }
     }
 
