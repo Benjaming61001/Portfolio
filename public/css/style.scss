@@ -289,8 +289,6 @@ body {
   }
 
   .main-weather {
-    grid-template-columns: repeat(1, auto);
-
     .main-container {
       position: relative;
       width: 600px;
@@ -472,6 +470,12 @@ body {
     }
   }
 
+  .main-bmi,
+  .main-weather,
+  .main-ttt {
+    grid-template-columns: repeat(1, auto);
+  }
+
   .footer {
     margin-top: auto;
     height: var(--footerHeight);
@@ -519,6 +523,7 @@ body {
 
     .main-skill {
       grid-template-columns: repeat(5, 1fr);
+      padding: 24px;
 
       .main-content {
         font-size: 18px;
@@ -569,6 +574,10 @@ body {
 
     .main-skill {
       grid-template-columns: repeat(3, 1fr);
+
+      .main-content {
+        font-size: 18px;
+      }
     }
 
     .main-about,
@@ -651,6 +660,8 @@ body {
       grid-template-columns: repeat(2, 1fr);
 
       .main-content {
+        width: 100px;
+        height: 160px;
         font-size: 16px;
       }
     }
