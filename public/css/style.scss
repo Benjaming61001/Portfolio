@@ -294,7 +294,7 @@ body {
     .main-container {
       position: relative;
       width: 600px;
-      height: 70px;
+      height: 50px;
       background: var(--gradient1);
       padding: 28px 32px;
       overflow: hidden;
@@ -513,7 +513,7 @@ body {
       grid-template-columns: repeat(2, 1fr);
 
       .main-content {
-        font-size: 64px;
+        font-size: 42px;
       }
     }
 
@@ -561,6 +561,12 @@ body {
 
 @media (max-width: 950px) {
   body {
+    .main {
+      .main-content {
+        font-size: 38px;
+      }
+    }
+
     .main-skill {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -637,7 +643,7 @@ body {
       padding-right: 0;
 
       .main-content {
-        font-size: 64px;
+        font-size: 32px;
       }
     }
 
@@ -683,6 +689,7 @@ body {
           }
 
           p {
+            margin-top: 40px;
             font-size: 1.2rem;
           }
         }
