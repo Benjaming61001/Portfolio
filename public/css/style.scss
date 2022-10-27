@@ -547,7 +547,7 @@ body {
         width: 100%;
         text-align: center;
         margin-top: 30px;
-        scale: 0;
+        transform: scale(0);
         opacity: 0;
         display: none;
 
@@ -649,7 +649,7 @@ body {
 
         .weather-box,
         .weather-details {
-          scale: 0;
+          transform: scale(0);
           opacity: 0;
         }
       }
@@ -684,7 +684,7 @@ body {
 
 @keyframes fadeIn {
   to {
-    scale: 1;
+    transform: scale(1);
     opacity: 1;
   }
 }
