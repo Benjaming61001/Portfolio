@@ -11,6 +11,7 @@
   --bg: rgb(28, 28, 28);
   --bgLight: rgb(48, 48, 48);
   --bgLighter: rgb(128, 128, 128);
+  --newbg: #252525;
   --linearRY: linear-gradient(90deg, var(--red), var(--yellow));
 
   --gradient1: linear-gradient(90deg, #77f2b3, #3cb3c3);
@@ -194,8 +195,8 @@ body {
     padding-top: 0;
 
     .main-content {
-      width: 120px;
-      height: 180px;
+      width: 180px;
+      height: 240px;
       font-size: 18px;
       display: flex;
       flex-direction: column;
@@ -212,8 +213,55 @@ body {
 
     .main-content:hover {
       transform: translateY(-10px);
-      outline: 3px solid var(--red);
       filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.15));
+    }
+
+    .main-content:hover:nth-child(1) {
+      outline: 3px solid #f16529;
+    }
+
+    .main-content:hover:nth-child(2) {
+      outline: 3px solid #2965f1;
+    }
+
+    .main-content:hover:nth-child(3) {
+      outline: 3px solid #f7df1e;
+    }
+
+    .main-content:hover:nth-child(4) {
+      outline: 3px solid #cd6799;
+    }
+
+    .main-content:hover:nth-child(5) {
+      outline: 3px solid #f58219;
+    }
+
+    .main-content:hover:nth-child(6) {
+      outline: 3px solid #a179dc;
+    }
+
+    .main-content:hover:nth-child(7) {
+      outline: 3px solid #3a76a7;
+    }
+
+    .main-content:hover:nth-child(8) {
+      outline: 3px solid #171515;
+    }
+
+    .main-content:hover:nth-child(9) {
+      outline: 3px solid #222c37;
+    }
+
+    .main-content:hover:nth-child(10) {
+      outline: 3px solid #31a8ff;
+    }
+
+    .main-content:hover:nth-child(11) {
+      outline: 3px solid #31a8ff;
+    }
+
+    .main-content:hover:nth-child(12) {
+      outline: 3px solid #9999ff;
     }
 
     .main-content:active {
@@ -226,15 +274,14 @@ body {
     padding-top: 0;
 
     .main-content {
-      width: 300px;
-      height: 400px;
+      width: auto;
+      height: auto;
       font-size: 24px;
-      padding: 28px;
+      padding: 32px;
       cursor: default;
     }
 
     .about-one {
-      width: auto;
       max-width: 600px;
       overflow: hidden;
     }
@@ -251,10 +298,10 @@ body {
     padding-top: 0;
 
     .main-content {
-      width: 300px;
+      width: auto;
       height: auto;
       font-size: 24px;
-      padding: 28px;
+      padding: 32px;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -775,8 +822,8 @@ body {
       grid-template-columns: repeat(2, 1fr);
 
       .main-content {
-        width: 100px;
-        height: 160px;
+        width: 160px;
+        height: 200px;
         font-size: 16px;
       }
     }
@@ -784,6 +831,15 @@ body {
     .main-about {
       .main-content {
         font-size: 18px;
+      }
+    }
+
+    .main-contact {
+      .main-content {
+        img {
+          width: 90%;
+          height: 90%;
+        }
       }
     }
 
