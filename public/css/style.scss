@@ -427,6 +427,7 @@ body {
             font-size: 24px;
             text-align: center;
             border: 1px solid black;
+            margin-left: 10px;
             margin-right: 60px;
             background-color: rgba(255, 255, 255, 0.25);
           }
@@ -668,9 +669,109 @@ body {
     }
   }
 
+  .main-stopwatch {
+    width: auto;
+    height: auto;
+    padding: 12px;
+    cursor: default;
+    margin-bottom: 30px;
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      transition: all 0.3s;
+      gap: 18px;
+
+      .time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        font-size: 90px;
+      }
+
+      .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 30px;
+        margin-right: 30px;
+        border-bottom: 5px solid #1c1c1e;
+
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          font-size: 30px;
+          cursor: pointer;
+        }
+
+        .mainStartBtn {
+          border-radius: 50%;
+          border: 5px solid #054e18;
+          padding: 9px;
+          transition: 0.3s;
+
+          .startBtn {
+            background-color: #054e18;
+            color: #1de445;
+            border: none;
+          }
+        }
+
+        .timerStartedMain {
+          border: 5px solid #580b06;
+
+          .timerStarted {
+            background-color: #580b06;
+            color: #ec3740;
+          }
+        }
+
+        .mainLapBtn {
+          border-radius: 50%;
+          border: 5px solid #1c1c1e;
+          padding: 9px;
+          transition: 0.3s;
+
+          .lapResetBtn {
+            background-color: #1c1c1e;
+            color: white;
+            border: none;
+          }
+        }
+
+        .mainStartBtn:hover,
+        .mainLapBtn:hover {
+          border: 5px solid white;
+        }
+      }
+
+      .laps {
+        width: 60%;
+        margin-bottom: 30px;
+
+        .lap {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 30px;
+          font-size: 32px;
+          border-bottom: 3px solid #1c1c1e;
+        }
+      }
+    }
+  }
+
   .main-bmi,
   .main-weather,
-  .main-ttt {
+  .main-ttt,
+  .main-stopwatch {
     grid-template-columns: repeat(1, auto);
   }
 
@@ -756,9 +857,34 @@ body {
       }
     }
 
+    .main-stopwatch {
+      .main-content {
+        .time {
+          font-size: 60px;
+        }
+
+        .buttons {
+          button {
+            width: 70px;
+            height: 70px;
+            font-size: 24px;
+          }
+        }
+
+        .laps {
+          width: 80%;
+          .lap {
+            margin-top: 18px;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
     .main-bmi,
     .main-weather,
-    .main-ttt {
+    .main-ttt,
+    .main-stopwatch {
       grid-template-columns: repeat(1, 1fr);
     }
   }
@@ -883,6 +1009,46 @@ body {
       }
     }
 
+    .main-bmi {
+      .main-content {
+        .container {
+          padding: 16px;
+          width: 80vw;
+          height: auto;
+
+          h1 {
+            font-size: 28px;
+          }
+
+          p {
+            font-size: 18px;
+          }
+
+          .data {
+            label {
+              font-size: 20px;
+            }
+
+            input {
+              width: 60px;
+              height: 36px;
+              font-size: 20px;
+              margin-right: 30px;
+            }
+
+            .button {
+              width: 200px;
+            }
+          }
+          .res {
+            .result {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+
     .main-weather {
       padding: auto 10px 30px 10px;
 
@@ -965,6 +1131,30 @@ body {
               font-size: 16px;
               margin: 0;
             }
+          }
+        }
+      }
+    }
+
+    .main-stopwatch {
+      .main-content {
+        .time {
+          font-size: 30px;
+        }
+
+        .buttons {
+          button {
+            width: 50px;
+            height: 50px;
+            font-size: 16px;
+          }
+        }
+
+        .laps {
+          width: 90%;
+          .lap {
+            margin-top: 12px;
+            font-size: 16px;
           }
         }
       }
