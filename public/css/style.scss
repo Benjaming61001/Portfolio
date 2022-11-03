@@ -240,6 +240,10 @@ body {
       outline: 3px solid #f7df1e;
     }
 
+    #Bootstrap:hover {
+      outline: 3px solid #7e11f9;
+    }
+
     #vue:hover {
       outline: 3px solid #3fb984;
     }
@@ -344,6 +348,7 @@ body {
         li {
           width: 100px;
           list-style: none;
+          transition: 0.3s ease-in-out;
 
           img {
             width: 50px;
@@ -361,10 +366,9 @@ body {
               margin: 0;
             }
           }
-
-          a:hover {
-            color: red;
-          }
+        }
+        li:hover {
+          transform: scale(1.5);
         }
       }
     }
@@ -480,11 +484,14 @@ body {
   }
 
   .main-weather {
+    .main-container:hover {
+      background: white;
+    }
     .main-container {
       position: relative;
       width: 600px;
       height: 100px;
-      background: var(--gradient1);
+      background: #939597;
       padding: 28px 32px;
       overflow: hidden;
       border-radius: 18px;
