@@ -455,21 +455,22 @@ body {
           }
         }
 
-        .clear {
-          display: block;
-          margin: auto auto 10px;
-          width: 120px;
-          height: 40px;
-        }
-
-        .button,
-        .clear {
-          background: transparent;
-          text-transform: uppercase;
-          border: 1px solid black;
-          font-size: 16px;
-          color: black;
-          cursor: pointer;
+        .buttons {
+          display: flex;
+          .button,
+          .clear {
+            display: block;
+            margin: auto auto 10px;
+            padding: 16px;
+            width: auto;
+            height: 50px;
+            background: transparent;
+            text-transform: uppercase;
+            border: 1px solid black;
+            font-size: 16px;
+            color: black;
+            cursor: pointer;
+          }
         }
 
         .button:hover,
